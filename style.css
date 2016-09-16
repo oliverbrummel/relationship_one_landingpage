@@ -14,6 +14,10 @@
   padding: 25px;
 }
 
-.container  {
+#middleDiv  {
   border-bottom: 3px solid #000000;
+}
+
+.bold {
+  font-weight: bold;
 }

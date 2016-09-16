@@ -21,7 +21,7 @@
       <img src = "media_files/laundrybanner.jpg" />
     </div>
     <div>
-      <div class = "container">
+      <div id = "middleDiv" class = "container">
         <div class = "loremIpsum col-xs-6">
           <p>
             Mustache snackwave man braid, irony godard tbh woke yuccie four dollar toast hot chicken ugh vegan. Next level beard paleo hoodie, schlitz dreamcatcher williamsburg raclette vaporware migas cray. Ethical lumbersexual actually, hashtag authentic PBR&B pour-over offal stumptown. Raclette selfies +1 authentic meditation tofu crucifix vaporware, chia direct trade bitters keffiyeh snackwave. Biodiesel hammock roof party, tbh church-key live-edge fap put a bird on it lo-fi craft beer cred brooklyn. Locavore subway tile sartorial direct trade. Sriracha franzen copper mug retro, fanny pack polaroid swag put a bird on it brooklyn tbh enamel pin XOXO hot chicken.
@@ -440,12 +440,18 @@
               <label for "additionalComments">Additional Comments:</label>
               <textarea class = "form-control" rows = "4" id = "additionalComments"></textarea>
             </div>
-            <button class = "btn btn-success" type = "submit">Submit</button>
+            <button id = "submitButton" class = "btn btn-success" type = "button submit">Submit</button>
 
           </form>
         </div>
       </div>
+      <div class = "container">
+        <table id = "formDisplay" class = "table table-striped">
+          <tbody>
 
+          </tbody>
+        </table>
+      </div>
     </div>
 
   </body>
