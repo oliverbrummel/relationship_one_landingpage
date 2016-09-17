@@ -3,17 +3,38 @@
   height: auto;
 }
 
-.loremIpsum {
-  border-right: 3px solid #000000;
-  padding: 25px;
-  margin-top: 10px;
-  line-height: 1.6em;
-}
-
-.entryForm {
-  padding: 25px;
-}
-
 #middleDiv  {
   border-bottom: 3px solid #000000;
 }
+
+.loremIpsum {
+  display: inline-block;
+  border-right: 3px solid #000000;
+  padding: 25px;
+  margin-top: 10px;
+  line-height: 2em;
+  width: 48%;
+  float: left;
+}
+
+.formDiv {
+  display: inline-block;
+  padding: 50px 30px 50px 30px;
+  width: 48%;
+}
+
+
+@media only screen
+  and (max-width: 800px) {
+    .loremIpsum {
+      display: block;
+      border-right: none;
+      border-bottom:3px solid #000000;
+      margin-bottom: 50px;
+      width: 100%;
+    }
+    .formDiv  {
+      display: block;
+      width: 100%;
+    }
+  }

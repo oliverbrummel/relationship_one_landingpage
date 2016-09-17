@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Relationship One | Test Landing Page</title>
+    <!-- External libraries -->
     <script src = "https://code.jquery.com/jquery-3.1.0.min.js"
             integrity = "sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
-            crossorigin = "anonymous">
-    </script>
-    <script src = "client.js"></script>
+            crossorigin = "anonymous"></script>
     <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity = "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin = "anonymous" >
+    <!-- Local files below -->
+    <script src = "client.js"></script>
     <link rel = "stylesheet" href = "style.css" />
   </head>
   <body>
@@ -22,7 +23,7 @@
     </div>
     <div>
       <div id = "middleDiv" class = "container">
-        <div class = "loremIpsum col-xs-6">
+        <div class = "loremIpsum">
           <p>
             Mustache snackwave man braid, irony godard tbh woke yuccie four dollar toast hot chicken ugh vegan. Next level beard paleo hoodie, schlitz dreamcatcher williamsburg raclette vaporware migas cray. Ethical lumbersexual actually, hashtag authentic PBR&B pour-over offal stumptown. Raclette selfies +1 authentic meditation tofu crucifix vaporware, chia direct trade bitters keffiyeh snackwave. Biodiesel hammock roof party, tbh church-key live-edge fap put a bird on it lo-fi craft beer cred brooklyn. Locavore subway tile sartorial direct trade. Sriracha franzen copper mug retro, fanny pack polaroid swag put a bird on it brooklyn tbh enamel pin XOXO hot chicken.
           </p>
@@ -33,8 +34,8 @@
             Tumeric blog portland health goth, vape gochujang actually everyday carry post-ironic cardigan seitan thundercats blue bottle street art shoreditch. Celiac four loko health goth truffaut bespoke pug, bicycle rights edison bulb mumblecore taxidermy leggings shabby chic. Banjo live-edge meggings squid, gentrify cold-pressed letterpress small batch distillery deep v. La croix pop-up truffaut, plaid wayfarers chartreuse kombucha hot chicken semiotics actually brooklyn messenger bag direct trade meggings vice. Hella hexagon church-key, roof party drinking vinegar godard poke wolf blog single-origin coffee hammock vaporware brooklyn. Marfa YOLO sartorial art party messenger bag microdosing. Organic kinfolk gochujang messenger bag, ramps cardigan sriracha vaporware edison bulb yr live-edge man braid chillwave vice.
           </p>
         </div>
-        <div class = "entryForm col-xs-6">
-          <form>
+        <div class = "formDiv">
+          <form id = "myForm">
             <div class = "form-group">
               <label for "firstName">First Name:</label>
               <input class = "form-control" type = "text" id = "firstName" />
@@ -448,7 +449,7 @@
       <div class = "container">
         <table id = "formDisplay" class = "table table-striped">
           <tbody>
-
+            <!-- table body content appended via jquery on click of sumbit -->
           </tbody>
         </table>
       </div>
